@@ -5,6 +5,82 @@
 
     <meta name="google-signin-client_id"
           content="825294038800-k8q5t1683bvmavglf4k3i8ih7ft6q8n3.apps.googleusercontent.com">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        font-family: Arial, sans-serif;
+        color: white;
+        background:
+            radial-gradient(circle at top left, #4285f4, transparent 40%),
+            radial-gradient(circle at bottom right, #a855f7, transparent 40%),
+            linear-gradient(135deg, #111827, #020617);
+        overflow: hidden;
+    }
+
+    body::before {
+        content: "PT 2.5 · GOOGLE SIGN IN";
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    body::after {
+        content: "OAuth 2 · Google Identity Services";
+        font-size: 15px;
+        color: #cbd5e1;
+        margin-bottom: 10px;
+    }
+
+    .g_id_signin {
+        padding: 22px;
+        border-radius: 18px;
+        background: rgba(255,255,255,0.10);
+        border: 1px solid rgba(255,255,255,0.18);
+        box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+        backdrop-filter: blur(15px);
+    }
+
+    #missatge-benvinguda {
+        margin: 0;
+        padding: 22px 32px;
+        border-radius: 18px;
+        background: rgba(255,255,255,0.12);
+        border: 1px solid rgba(255,255,255,0.18);
+        box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+        backdrop-filter: blur(15px);
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #boto-sortir {
+        padding: 12px 26px;
+        border: 0;
+        border-radius: 12px;
+        background: #ef4444;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        box-shadow: 0 10px 30px rgba(239,68,68,0.35);
+        transition: 0.25s;
+    }
+
+    #boto-sortir:hover {
+        transform: translateY(-2px) scale(1.03);
+        background: #dc2626;
+    }
+</style>
 </head>
 
 <body>
